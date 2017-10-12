@@ -1,8 +1,7 @@
 FROM node:8
 
-ENV NODE_ENV=production
-
 WORKDIR /home/node/app
+ENV NODE_ENV=production
 
 COPY package.json .
 RUN yarn
