@@ -5,9 +5,11 @@ ENV NODE_ENV=production
 WORKDIR /home/node/app
 
 COPY package.json .
-RUN yarn && yarn build
+RUN yarn
+
+COPY public ./public
+RUN yarn build
 
 COPY api .
-COPY build ./public
 
 CMD ["node", "main.js"]

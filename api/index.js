@@ -9,7 +9,7 @@ const app = express();
 
 if (process.env.NODE_ENV === 'production') {
   app.use(helmet());
-  app.use(express.static(path.join(__dirname, 'public')));
+  app.use(express.static(path.join(__dirname, 'build')));
 }
 
 app.use(bodyParser.urlencoded({ extended: false }));
