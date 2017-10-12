@@ -22,7 +22,7 @@ app.use('/api', router);
 Object.values(controllers).forEach(Controller => new Controller(router));
 
 router.use((req, res) => {
-  res.status(404).json({ error: 404, message: 'not found'});
+  res.status(404).end();
 });
 
 if (PRODUCTION) {
