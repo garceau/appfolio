@@ -11,6 +11,6 @@ COPY public ./public
 COPY src ./src
 RUN yarn build
 
-COPY api .
+COPY api ./api
 
-CMD ["node", "main.js"]
+CMD ["node", "api/main.js"]
