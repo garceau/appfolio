@@ -8,6 +8,7 @@ COPY package.json .
 RUN yarn
 
 COPY public ./public
+COPY src ./src
 RUN yarn build
 
 COPY api .
