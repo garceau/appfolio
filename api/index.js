@@ -21,6 +21,10 @@ app.use('/api', router);
 
 Object.values(controllers).forEach(Controller => new Controller(router));
 
+router.use((req, res) => {
+  res.status(404).json({ error: 404, message: 'not found'});
+});
+
 if (PRODUCTION) {
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
