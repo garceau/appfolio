@@ -13,4 +13,4 @@ RUN yarn build
 
 COPY api ./api
 
-CMD ["node", "api/main.js"]
+CMD ["node", "api"]
