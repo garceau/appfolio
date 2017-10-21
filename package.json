@@ -9,17 +9,27 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "babel-eslint": "7.2.3",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "helmet": "^3.8.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14"
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.14",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "reselect": "^3.0.1"
   },
   "devDependencies": {
     "eslint": "^4.8.0",
     "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-config-react-app": "^2.0.1",
+    "eslint-plugin-flowtype": "2.34.1",
     "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.1.0",
     "nodemon": "^1.12.1"
   },
   "proxy": "http://localhost:5000"
